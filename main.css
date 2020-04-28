@@ -1,0 +1,653 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: lightgray;
+}
+
+div.header{
+    text-align: center;
+    color: #000;
+    background-color: yellow;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+div.scroll{
+    position: fixed;
+    left: 0;
+    background-color: darkgoldenrod;
+    height: 5px;
+}
+div.header h1{
+    padding-top: 1em;
+}
+
+div.header h1 span{
+    font-size: 200%;
+}
+
+div.about-js{
+    width: 80%;
+    margin: auto;
+    padding: 1em .5em;
+    background-color: honeydew;
+}
+div.about-js p{
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.obj{
+    width: 80%;
+    margin: auto;
+    padding: 1em .5em;
+    background-color: honeydew;
+}
+
+div.obj ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 10px;
+}
+
+
+
+/* Navbar */
+nav.navbar{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    color: #333;
+    z-index: 10;
+}
+nav a.brand-logo{
+    float: left;
+    color: #333;
+    font-size: 2rem;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    font-weight: 600;
+    margin-right: 10px;
+    color: orange;
+    
+}
+nav a.brand-logo .brace1, nav a.brand-logo .brace2{
+    font-size: 2rem;
+}
+nav a.brand-logo .c, nav a.brand-logo .r{
+    border: orangered 1px solid;
+    padding: 0em .1em;
+    border-radius: 50%;
+    background-color: orange;
+    color: #fff;
+}
+nav ul{
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a.login{
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background: royalblue;
+    line-height: 25px;   
+    align-self: center;
+    padding: 5px 15px;
+    position: absolute;
+    right: 20px;
+    font-weight: 600;
+    border-radius:3px;
+    transition: 200ms ease-in-out;
+}
+nav a.login:hover{
+    background-color: rgba(65, 105, 225, 0.836);
+    transition: 200ms ease-in-out;
+}
+
+
+@keyframes dropdown{
+    0%{
+        height: 0;
+    }
+    100%{
+        height:220px;
+    }
+}
+@keyframes dropdown2{
+    0%{
+        height: 0;
+    }
+    100%{
+        height:520px;
+    }
+}
+nav ul li > ul{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    top: 45px;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+    box-shadow: -3px -2px 3px rgba(0,0,0,.1), 3px 3px 3px rgba(0,0,0,.1);
+    border-radius: 2px;
+}
+nav ul li:hover > ul{
+    height: auto;
+    animation-name: dropdown;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+nav ul li > ul li{
+    margin: 0;
+    padding:0;
+}
+nav ul li > ul li:hover{
+    margin: 0;
+    padding:0;
+    background-color: rgba(0,0,0,.1);
+}
+nav ul li > ul li a{
+    color: #333;
+    padding: 10px 20px;
+}
+nav ul li div#more{
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    top: 45px;
+    box-shadow: -3px -2px 3px rgba(0,0,0,.1), 3px 3px 3px rgba(0,0,0,.1);
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+    border-radius: 2px;
+}
+nav ul li:hover > div#more{
+    height: auto;
+    animation-name: dropdown2;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+nav ul li div#more div{
+    margin: 20px;
+    padding: 20px;
+}
+nav ul li div#more div ul{
+    display: block
+}
+nav ul li div#more div ul li{
+    padding: 0;
+    margin: 0;
+}
+nav ul li div#more div ul li:hover{
+    background-color: rgba(0,0,0,.1);
+}
+nav ul li div#more div ul li a{
+    padding: 1em;
+}
+
+/* Main section */
+
+div#main-section div.showcase{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/734168/pexels-photo-734168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+}
+
+div.showcase div.content{
+    position: absolute;
+    right: 50px;
+    top: 150px;
+    width: 400px;    
+}
+div.showcase div.content h3{
+    color: rgba(252, 252, 252,.5);
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.showcase div.content p{
+    margin-top: 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+div.showcase div.content a.read-more{
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: rgb(8, 31, 99);
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: block;
+    width: 80px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.1);
+    transition: 200ms ease-in-out;
+}
+div.showcase div.content a.read-more:hover{
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: rgb(3, 35, 133);
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: block;
+    width: 80px;
+    text-align: center;
+    font-weight: 600;
+    transition: 200ms ease-in-out;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.1);
+}
+
+@media screen and (max-width:780px){
+    div#main-section div.showcase{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://images.pexels.com/photos/734168/pexels-photo-734168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .9;
+    }
+    
+    div.showcase div.content{
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        width: 400px;    
+    }
+    div.showcase div.content h3{
+        color: rgba(252, 252, 252,.5);
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div.showcase div.content p{
+        margin-top: 20px;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+    }
+    div.showcase div.content a.read-more{
+        text-decoration: none;
+        color: #eeeeee;
+        background-color: rgb(8, 31, 99);
+        padding: 10px 20px;
+        margin-top: 30px;
+        display: block;
+        width: 80px;
+        text-align: center;
+        font-weight: 600;
+        box-shadow: 0px 3px 3px rgba(0,0,0,.1);
+        transition: 200ms ease-in-out;
+    }
+    div.showcase div.content a.read-more:hover{
+        text-decoration: none;
+        color: #eeeeee;
+        background-color: rgb(3, 35, 133);
+        padding: 10px 20px;
+        margin-top: 30px;
+        display: block;
+        width: 80px;
+        text-align: center;
+        font-weight: 600;
+        transition: 200ms ease-in-out;
+        box-shadow: 0px 3px 3px rgba(0,0,0,.1);
+    }
+    
+}
+
+div#main-section div.facilities-section{
+    background-color: #fff;
+    /* height: 100vh; */
+    padding-bottom: 0;
+}
+div#main-section div.facilities-section h2{
+    font-size: 2rem;
+    color: rgba(0,0,0,.7);
+    text-align: center;
+    padding-top: 1em;
+    font-family: sans-serif;
+}
+div#main-section div.facilities{
+    display: flex;
+    padding: 1em 0em;
+    padding-bottom: 0;
+}
+div#main-section div.facilities div h3{
+    padding: 1em 0em;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.5);
+}
+div#main-section div.facilities div a.icon{
+    padding-top: 1em;
+    margin-bottom: 1em;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.5);
+}
+div#main-section div.facilities div{
+    text-align: center;
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 2em;
+    border:1px solid rgba(0,0,0,.1);
+    margin: 1em;
+}
+div#main-section div.facilities div p{
+    text-align: left;
+    padding:1em 0em;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.7);
+}
+div#main-section div.facilities div a.read-more{
+    text-decoration: none;
+    color: #fff;
+    background-color: royalblue;
+    padding: 10px 20px;
+    margin: auto;
+    display: block;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+div#main-section div.facilities div a.read-more:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(16, 62, 202);
+    padding: 10px 20px;
+    margin: auto;
+    display: block;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+
+div.facilities-match-with-parents{
+    padding: 0em 1em;
+    padding-bottom: 1em;
+}
+div.facilities-match-with-parents h3{
+    padding-bottom: 1em;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.7);
+}
+div.facilities-match-with-parents div{
+    display: flex
+}
+div.facilities-match-with-parents div a{
+    font-size: 2rem;
+    color:rgba(0,0,0,.6);
+}
+div.facilities-match-with-parents div p{
+    margin-left: 20px;
+    padding-left:20px;
+    border-left: 1px solid rgba(0,0,0,.2);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+div.standard{
+    display: flex;
+    padding: 1em;
+    /* background-color:#eeeeee; */
+}
+
+div.context{
+    flex: 1;
+    margin: 20px;
+}
+div.context h2{
+    padding-left: 1em;
+    color: rgba(0,0,0,.7);
+}
+div.context p{
+    padding:1em;
+    color:rgba(0,0,0,.5);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+div.key-standards{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(0,0,0,.1);
+}
+div.key-standards ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2em;   
+}
+div.key-standards ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    opacity: .5;
+}
+div.key-standards ul li a{
+    font-size: 1.5rem;
+    opacity: .5;
+    color: #333;
+    cursor: auto;
+}
+div.key-standards ul li span{
+    margin-left: 20px;
+    width: 200px;
+    font-size: 1.5rem;
+
+
+}
+div#main-section div.contact-wrapper{
+    position: relative;
+    background-color: rgba(43, 94, 233,.5);
+    left: -250px;
+    border-top-right-radius: 100%;
+    box-shadow: 10px -10px 10px rgba(0,0,0,.2);
+    z-index: 10;
+}
+div.follow-us{
+    margin-top: 40px;
+}
+div.follow-us h2{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: rgba(0,0,0,.6);
+}
+div.follow-us a{
+    font-size: 2rem;
+    margin-left: 20px;
+    color: rgb(252, 252, 252);
+    cursor: pointer;
+}
+div#main-section div.contact{
+    position: relative;
+    display: flex;
+    left: 250px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+div#main-section div.contact div.contact-detail{
+    display: block;
+    padding:2em;
+}
+div.contact-detail div.phone, div.contact-detail div.email, div.contact-detail div.address{
+    display: flex;
+    line-height: 2em;
+    color: rgba(252, 252, 252, 0.897);
+    font-size: 18px;
+    font-family: sans-serif;
+}
+div.phone span:nth-child(1){
+    margin-right: .3em;
+}
+div.email span:nth-child(1){
+    margin-right: .3em;
+}
+div.address span:nth-child(1){
+    margin-right: .3em;
+}
+div#main-section div.contact div.contact-form{
+    /* padding: 1em; */
+    justify-content: center;
+    align-items: center;
+}
+div#main-section div.contact-form form{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    box-shadow: -5px -2px 3px rgba(0,0,0,.2), 3px 3px 3px rgba(0,0,0,.2);
+    border-radius: 5px;
+    padding-left: 1em;
+}
+div#main-section div.contact-form form div.form-group{
+    margin:20px 20px;
+}
+div#main-section div.contact-form form div.form-group label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,.6);
+}
+
+div#main-section div.contact-form form div.form-group input, textarea{
+    width: 100%;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1px solid rgba(0,0,0,.3);
+}
+div#main-section div.contact-form form button{
+    border: none;
+    display: block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color:royalblue;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+div#main-section div.about-us{
+    padding: 2em;
+}
+div#main-section div.about-us h2{
+    color:#333;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+div#main-section div.about-us p{
+    margin: 20px 0px;
+    color: rgb(41, 41, 49);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+div.footer{
+    display:block;
+    width: 100%;
+    background-color: rgb(2, 32, 36);
+}
+div.footer h1{
+    padding: 10px;
+    padding-bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+div.footer div.collaboration{
+    display: flex;
+}
+div.footer div.collaboration div{
+    border:1px solid rgba(247, 241, 241, 0.1);
+    padding:1em;
+    margin: 20px 10px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+    /* background-color: rgba(252, 252, 252, 0.897); */
+}
+div.footer div.collaboration img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+div.footer div.collaboration h2{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+div.footer div.collaboration p{
+    color: rgb(99, 96, 96);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+div.footer div.copyright{
+    text-align: center;
+    padding: .5em 1em;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+}

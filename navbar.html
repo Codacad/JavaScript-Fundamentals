@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown menu</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body>
+    <nav class="mobile-navbar">
+        
+    </nav>
+    <nav class="navbar">
+        <a href="#" class="brand-logo"><span class="brace1">{</span><span><span class="r">C</span>od</span><span><span class="r">R</span>iz</span><span class="brace2">}</span></a>
+        <ul>
+            <li><a href="#!">Home</a></li>
+            <li>
+                <a href="#facilities">Services <i class="fas fa-caret-down" style="margin-left: 5px;"></i></a>
+                <ul>
+                    <li><a href="#">Service One</a></li>
+                    <li><a href="#">Service Two</a></li>
+                    <li><a href="#">Service Three</a></li>
+                    <li><a href="#">Service Four</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#!">More</a>
+                <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+                <div id="more">
+                    <div>
+                        <h3>Side One</h3>
+                        <ul>
+                            <li><a href="#!">Menu Side One</a></li>
+                            <li><a href="#!">Menu Side One</a></li>
+                            <li><a href="#!">Menu Side One</a></li>
+                            <li><a href="#!">Menu Side One</a></li>
+                            <li><a href="#!">Menu Side One</a></li>
+                            <li><a href="#!">Menu Side One</a></li>
+                            <li><a href="#!">Menu Side One</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Side Two</h3>
+                        <ul>
+                            <li><a href="#!">Menu Side Two</a></li>
+                            <li><a href="#!">Menu Side Two</a></li>
+                            <li><a href="#!">Menu Side Two</a></li>
+                            <li><a href="#!">Menu Side Two</a></li>
+                            <li><a href="#!">Menu Side Two</a></li>
+                            <li><a href="#!">Menu Side Two</a></li>
+                            <li><a href="#!">Menu Side Two</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Side Three</h3>
+                        <ul>
+                            <li><a href="#!">Menu Side Three</a></li>
+                            <li><a href="#!">Menu Side Three</a></li>
+                            <li><a href="#!">Menu Side Three</a></li>
+                            <li><a href="#!">Menu Side Three</a></li>
+                            <li><a href="#!">Menu Side Three</a></li>
+                            <li><a href="#!">Menu Side Three</a></li>
+                            <li><a href="#!">Menu Side Three</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <a href="#" class="login">
+            Login
+            <i class="fas fa-sign-in-alt"></i>
+        </a>
+    </nav>
+    <div id="main-section">
+        <div class="showcase">
+            <div class="content">
+                <h3>Who are we?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rem blanditiis, nam ratione fuga quis quas in quibusdam praesentium illum perspiciatis necessitatibus alias saepe ut. Magnam eum esse laboriosam placeat, itaque sed aut consectetur nam harum est aspernatur corrupti necessitatibus mollitia iusto nostrum, iste alias excepturi, voluptatum sapiente nemo! Beatae.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="facilities-section" id="facilities">
+            <h2>Facilites, we provide to our students</h2>
+            <div class="facilities">
+                <div class="transport">
+                    <h3>Students' Transportation</h3>
+                    <!-- <img src="https://images.pexels.com/photos/3427742/pexels-photo-3427742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="School Bus"> -->
+                    <a href="#facilities" class="icon"><i class="fas fa-bus"></i></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum saepe magnam, placeat cumque eligendi quibusdam laborum odio. Animi, voluptatibus dolorem!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="computer-lab">
+                    <h3>Computer Lab</h3>
+                    <!-- <img src="https://images.pexels.com/photos/2291471/pexels-photo-2291471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Lab"> -->
+                    <a href="#facilities" class="icon"><i class="fas fa-book-reader"></i></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum saepe magnam, placeat cumque eligendi quibusdam laborum odio. Animi, voluptatibus dolorem!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="library">
+                    <h3>Library</h3>
+                    <!-- <img src="https://images.pexels.com/photos/2291471/pexels-photo-2291471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=50" alt="Library`"> -->
+                    <a href="#facilities" class="icon"><i class="fas fa-desktop"></i></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum saepe magnam, placeat cumque eligendi quibusdam laborum odio. Animi, voluptatibus dolorem!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="shops">
+                    <h3>Shops</h3>
+                    <!-- <img src="https://images.pexels.com/photos/2102037/pexels-photo-2102037.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Cafeteria">
+                     -->
+                     <a href="#facilities" class="icon"><i class="fas fa-store"></i></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum saepe magnam, placeat cumque eligendi quibusdam laborum odio. Animi, voluptatibus dolorem!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="facilities-match-with-parents" id="match">
+                <h3>How our services the children's Parents</h3>
+                <div>
+                    <a href="#match"><i class="far fa-hand-point-right"></i></a>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officia nulla assumenda cum natus sed facilis unde modi magni tempore quo sequi veniam maiores eligendi similique at ipsa veritatis exercitationem incidunt consequatur expedita, culpa numquam? Itaque perferendis cupiditate, officiis fuga doloribus velit repellat odio ratione a provident consequuntur illum maxime.</p>
+                </div>
+            </div>
+        </div>
+        <div class="standard" id="standard">
+            <div class="context">
+                <h2>Our Education Standard</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque exercitationem, blanditiis excepturi magni doloribus minus molestiae vel, pariatur sed quis sint qui quas animi harum. Est veniam eum minus, hic vel doloremque laborum velit molestias debitis incidunt ipsa, aspernatur modi quaerat delectus nisi atque culpa quia. In neque unde, nemo ipsum expedita, voluptate quam porro non necessitatibus ratione eius vero accusantium quibusdam voluptatum, ipsa eos voluptatem quasi aliquam maxime dolor? Exercitationem rerum aut similique at deleniti assumenda vel inventore incidunt optio aliquid, porro voluptates voluptatem ipsam distinctio perferendis aspernatur magni sunt veritatis unde repellendus minus. Voluptatibus libero praesentium blanditiis veniam.</p>
+            </div>
+            <div class="key-standards">
+                <ul>
+                    <li><a href="#standard"><i class="fas fa-check"></i></a><span>Standard  One</span></li>
+                    <li><a href="#standard"><i class="fas fa-check"></i></a><span>Standard  Two</span></li>
+                    <li><a href="#standard"><i class="fas fa-check"></i></a><span>Standard  Three</span></li>
+                    <li><a href="#standard"><i class="fas fa-check"></i></a><span>Standard Four</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-wrapper" id="contact">
+            
+            <div class="contact">
+                <div class="contact-detail">
+                    <div class="phone">
+                        <span><i class="fas fa-phone"></i></span><span>+XX-XXXXXXXXXX</span>
+                    </div>
+                    <div class="email">
+                        <span><i class="far fa-envelope"></i></span><span>email@email.com</span>
+                    </div>
+                    <div class="address">
+                        <span><i class="fas fa-address-card"></i></span>
+                        <span>244601 Faridnagar AHT, Thankurdwara, Moradabad UP (India)</span>
+                    </div>
+                    <div class="follow-us">
+                        <h2>Follow Us</h2>
+                        <a href="#contact"><i class="fab fa-facebook"></i></a>
+                        <a href="#contact"><i class="fab fa-twitter"></i></a>
+                        <a href="#contact"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        </div>
+                        <button class="send-message" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="about-us" id="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi hic corrupti, fugiat quis nam! Ab expedita et natus! Asperiores porro, quo expedita unde architecto nisi? Animi eius suscipit ab cumque error obcaecati libero delectus quidem tempore necessitatibus iure, iste voluptatum sed blanditiis velit ipsam deserunt! Rerum aliquid minima quas sunt est voluptate! Cupiditate, iure perspiciatis? Vero possimus commodi voluptates vitae fuga repudiandae dolores ex? Natus odit non fugit nulla doloribus ipsum saepe, cum libero a ipsa illum eaque! Similique blanditiis, qui ratione voluptates officia voluptatum consequatur quod! Incidunt laudantium quia tempore excepturi voluptates magnam officia atque, quae nostrum fugit perferendis quasi, obcaecati dignissimos, deserunt modi voluptatem enim! Repellat, itaque eveniet molestias dolorem rem magnam sunt quibusdam voluptatibus, eaque ratione pariatur sequi delectus distinctio ullam praesentium vero est error a explicabo? Rem eos magnam aperiam numquam, nulla perspiciatis sint dolorem fugit debitis ducimus unde facere nemo repellat placeat amet. Delectus alias incidunt doloribus, maxime, tenetur consequuntur magni repellendus veritatis, consectetur omnis porro et? Perferendis illo sequi exercitationem quod dolorum ipsa est, id accusantium natus numquam praesentium, optio vitae, fugit nulla quos? Omnis quod modi dolor illo? Vitae nam velit, distinctio veritatis labore consectetur sapiente id ullam? Fugit id voluptates hic.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Our Collaborations</h1>
+            <div class="collaboration">
+                <div class="collaboration-one">
+                    <img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="collaboration">
+                    <h2>Collaboration One</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, deleniti sapiente. Eum quibusdam nihil magni dolor modi unde perspiciatis atque?</p>
+                </div>
+                <div class="collaboration-two">
+                    <img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="collaboration">
+                    <h2>Collaboration Two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, deleniti sapiente. Eum quibusdam nihil magni dolor modi unde perspiciatis atque?</p>
+                </div>
+                <div class="collaboration-three">
+                    <img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="collaboration">
+                    <h2>Collaboration Three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, deleniti sapiente. Eum quibusdam nihil magni dolor modi unde perspiciatis atque?</p>
+                </div><div class="collaboration-four">
+                    <img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="collaboration">
+                    <h2>Collaboration Four</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, deleniti sapiente. Eum quibusdam nihil magni dolor modi unde perspiciatis atque?</p>
+                </div>
+            </div>
+        <div class="copyright-section">
+            <div class="copyright">
+                &copy; CodRiz Copyright 2020
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script src="./intro.js"></script>
+</body>
+</html>
