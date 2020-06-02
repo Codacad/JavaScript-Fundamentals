@@ -23,11 +23,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const radio = document.querySelectorAll('div input[type="radio"]')
     radio.forEach(rad => {
-        console.log(rad.value)
         rad.onclick = (e) => {
             if(e.target.value == 'on'){
                 console.log(e.target.nextElementSibling.textContent, e.target.value)
             }
         }
     })
+})
+
+$(document).ready(function(){
+   const link = $('.items ul li a:even');
+   link.each((index, element) => {
+       $(element).css('background-color', "rgba(0,0,0,.1)");
+       $(element).click(() => {
+            alert("I am clicked")
+       })
+   })
+   const btn = $('.search-btn');
+   btn.each((index, element) => {
+       $(element).click((e) => {
+           $(element).prev().attr("value", "Please wait...")
+       })
+   })
+
+   $('input[type="text"]').keyup(function(){
+       let search = $(this).val();
+   })
 })

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>SVG</title>
+</head>
+<body>
+    <div class="svg-header">
+        <h1>Learning SVG</h1>
+    </div>
+
+    <div class="svg">
+        <div class="rect">
+            <h3>Rectangular</h3>
+            <div class="shapes">
+                <svg>
+                    <rect x="0px" y="0px" width="70px" height="70px" style="stroke:rgba(0,0,0,.5); fill: rgba(100, 148, 237, 0.21);"/>
+                    <rect x="80px" y="0px" width="90px" height="90px" style="stroke:rgba(0,0,0,.5); fill: rgba(100, 148, 237, 0.21);"/>                
+                    <rect x="180px" y="0px" width="110px" height="110px" style="stroke:rgba(0,0,0,.5); fill: rgba(100, 148, 237, 0.21);"/>
+                </svg>
+            </div>
+        </div>
+        <div class="ellipse">
+            <h3>Ellipse</h3>
+            <div class="shapes">
+                <svg>
+                    <ellipse cx="50px" cy="50px" rx="50px"  style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/>
+                    <ellipse cx="100px" cy="50px" rx="50px" style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/>                
+                    <ellipse cx="150px" cy="50px" rx="50px" style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/>
+                </svg>
+            </div>
+        </div>
+        <div class="line">
+            <h3>Line</h3>
+            <div class="shapes">
+                <svg>
+                    <line x1="20" y1="0" x2="20" y2="200" style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/> 
+                    <line x1="40" y1="0" x2="40" y2="200" style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/> 
+                    <line x1="60" y1="100" x2="400" y2="100" style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/> 
+                    <line x1="400" y1="200" x2="200" y2="0" style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/> 
+                    <line x1="200" y1="0" x2="60" y2="200" style="stroke:rgba(0,0,0,.5); fill: rgba(0,0,0,.1);"/> 
+                </svg>
+            </div>
+        </div>
+        <div class="path">
+            <h3>Paths</h3>
+            <div class="shapes">
+                <svg width="600" height="400">
+                    <path d="M 100 200 L 300 200 L 200 50 C 200 50 100 100 100 200"  fill="pink"/>
+                    <path d="M 320 50 L 520 50 L 420 200 Z"  fill="pink"/>
+                </svg>
+            </div>
+        </div>
+        <div class="path">
+            <h3>Shapes</h3>
+            <div class="shapes">
+                <svg style="width:100%; height:500px; text-align:center;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <g class="layer1">
+                     <title>Layer 1</title>
+                     <path d="m392.99145,79.84572c-36.01779,12.51269 -38.31804,93.4241 -37.17409,114.77137c1.14394,21.34727 7.81215,88.9532 7.21121,88.39375c-0.60093,-0.55945 -107.56721,-31.88888 -108.16815,-32.44834c-0.60093,-0.55945 37.85886,-43.07796 37.25792,-43.63742c-0.60093,-0.55945 -54.68501,0.55946 -55.28594,0c-0.60093,-0.55945 -10.21588,-7.2729 -10.81681,-7.83236c-0.60094,-0.55945 -40.26259,29.65107 -40.86353,29.09162c-0.60093,-0.55946 188.8568,-128.49534 210.62446,-152.22081" fill="#FF0000" id="svg_1" stroke="#000000" stroke-width="5" transform="rotate(-0.321142 290.464 179.489)"/>
+                     <ellipse cx="286.5" cy="182.5" fill="#000000" id="svg_2" rx="7" ry="5" stroke="#000000" stroke-width="5"/>
+                    </g>
+                    <g class="layer2">
+                        <title>Layer 2</title>
+                        <path d="m-8.20893,432.92081c204.55037,-289.91219 58.5542,22.10484 624.77764,99.82426l-624.77764,-99.82426z" fill="#ff00ff" fill-opacity="0.1" id="svg_4" stroke="#000000" stroke-width="0" transform="rotate(-8.86003 304.18 422.327)"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+        
+    <div class="svg-header">
+        <h1>Learning SVG Width D3</h1>
+    </div>
+
+    <div class="svg">
+        <div class="path">
+            <h3>Shapes</h3>
+            <div class="canvas">
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
